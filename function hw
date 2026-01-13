@@ -1,0 +1,41 @@
+<!-- 
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<!Doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+     <p id="0"></p>
+    <p id="1"></p>
+    <p id="2"></p>
+    <button onclick="myfunction(6)">Function execute</button>
+    <script>
+      function myfunction(x,y) {
+        if (y==undefined){
+           y=8
+        }
+        document.write(x*y);
+      }
+      var b=7;
+      function myfunction(){
+        var a=9;
+       document.getElementById("0").innerHTML = "b * a = " + (b * a);
+       document.getElementById("1").innerHTML = "Local a = " + a + ", Global b = " + b;
+      }
+        function myFunction(x, y) {
+         if (y === undefined) {
+          y = 8;
+      }
+          return x * y;
+      }
+      document.getElementById("2").innerHTML = myFunction(6);
+    </script>
+  </body>
+</html>
